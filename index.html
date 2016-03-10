@@ -165,8 +165,11 @@ size:>=30000
 --查找大小至少为30MB的repositories
 
 size:<50
+
 --查找大小低于50KB的repositories
+
 size:50..120
+
 --查找大小在50KB到120KB的repositories
 </code></pre>
 
@@ -182,9 +185,55 @@ size:>=30000
 --查找大小至少为30MB的repositories
 
 size:<50
+
 --查找大小低于50KB的repositories
+
 size:50..120
+
 --查找大小在50KB到120KB的repositories
+</code></pre>
+
+<h3>
+<a id="基于用户followers数量的搜索" class="anchor" href="#%E5%9F%BA%E4%BA%8E%E7%94%A8%E6%88%B7followers%E6%95%B0%E9%87%8F%E7%9A%84%E6%90%9C%E7%B4%A2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>基于repository被forks的数量的搜索</h3>
+
+<pre><code>forks:5
+
+--查找forks数量为5的repositories 
+
+forks:>=205
+
+--查找forks数量至少为205的repositories 
+
+forks:<90
+
+--查找forks数量小于90的repositories 
+
+forks:10..20
+
+--查找forks数量在10到20之间的repositories 
+
+github fork:true
+
+--查找包括forked在内，包含字符串github的repositories 
+
+github fork:only
+
+--查找forked的，包含字符串github的repositories 
+
+github
+
+--查找不包括forked在内，包含字符串github的repositories 
+</code></pre>
+<h3>
+<a id="基于用户followers数量的搜索" class="anchor" href="#%E5%9F%BA%E4%BA%8E%E7%94%A8%E6%88%B7followers%E6%95%B0%E9%87%8F%E7%9A%84%E6%90%9C%E7%B4%A2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>基于repository被stars的数量的搜索</h3>
+
+<pre><code>stars:10..20
+
+--查找stars数量为10--20并且小于1000KB的repositories 
+
+stars:>=500 fork:true language:php
+
+--查找包括forked的repositories在内，stars数量至少为500的repositories
 </code></pre>
 
       <footer class="site-footer">
