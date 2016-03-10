@@ -21,7 +21,7 @@
     <section class="main-content">
       <h1>
 <a id="github仓库查找资料" class="anchor" href="#%E6%90%9C%E7%B4%A2github%E4%BB%93%E5%BA%93%E6%9F%A5%E6%89%BE%E8%B5%84%E6%96%99" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>github仓库查找资料</h1>
-<h2><a id="github仓库查找资料" class="anchor" href="#%E6%90%9C%E7%B4%A2github%E4%BB%93%E5%BA%93%E6%9F%A5%E6%89%BE%E8%B5%84%E6%96%99" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>一、查找用户或组织</h2>
+<h2><a id="" class="anchor" href="#%E6%90%9C%E7%B4%A2github%E4%BB%93%E5%BA%93%E6%9F%A5%E6%89%BE%E8%B5%84%E6%96%99" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>一、查找用户或组织</h2>
 <h3>
 <a id="搜索用户或组织" class="anchor" href="#%E6%90%9C%E7%B4%A2%E7%94%A8%E6%88%B7%E6%88%96%E7%BB%84%E7%BB%87" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>搜索用户或组织</h3>
 
@@ -135,6 +135,56 @@ created:2010-01-01..2011-01-01 john in:login
 sparkle followers:1..10
 
 --查找含有1到10followers的用户
+</code></pre>
+
+<h2><a id="" class="anchor" href="#%E6%90%9C%E7%B4%A2github%E4%BB%93%E5%BA%93%E6%9F%A5%E6%89%BE%E8%B5%84%E6%96%99" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>二、查找repositories</h2>
+<h3>
+<a id="基于用户followers数量的搜索" class="anchor" href="#%E5%9F%BA%E4%BA%8E%E7%94%A8%E6%88%B7followers%E6%95%B0%E9%87%8F%E7%9A%84%E6%90%9C%E7%B4%A2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>范围搜索</h3>
+
+<pre><code>jquery in:name
+
+--查找名字中含有jquery的repositories
+
+jquery in:name,description
+
+--查找名字和说明含有jquery的repositories
+
+jquery in:readme
+
+--查找README文件含有jquery的repositories
+</code></pre>
+<h3>
+<a id="基于用户followers数量的搜索" class="anchor" href="#%E5%9F%BA%E4%BA%8E%E7%94%A8%E6%88%B7followers%E6%95%B0%E9%87%8F%E7%9A%84%E6%90%9C%E7%B4%A2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>基于repository大小的搜索</h3>
+
+<pre><code>size:1000
+
+--查找大小为1 MB的repositories
+
+size:>=30000
+
+--查找大小至少为30MB的repositories
+
+size:<50
+--查找大小低于50KB的repositories
+size:50..120
+--查找大小在50KB到120KB的repositories
+</code></pre>
+
+<h3>
+<a id="基于用户followers数量的搜索" class="anchor" href="#%E5%9F%BA%E4%BA%8E%E7%94%A8%E6%88%B7followers%E6%95%B0%E9%87%8F%E7%9A%84%E6%90%9C%E7%B4%A2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>基于repository大小的搜索</h3>
+
+<pre><code>size:1000
+
+--查找大小为1 MB的repositories
+
+size:>=30000
+
+--查找大小至少为30MB的repositories
+
+size:<50
+--查找大小低于50KB的repositories
+size:50..120
+--查找大小在50KB到120KB的repositories
 </code></pre>
 
       <footer class="site-footer">
