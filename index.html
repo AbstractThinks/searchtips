@@ -25,11 +25,35 @@
 <h3>
 <a id="搜索用户或组织" class="anchor" href="#%E6%90%9C%E7%B4%A2%E7%94%A8%E6%88%B7%E6%88%96%E7%BB%84%E7%BB%87" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>搜索用户或组织</h3>
 
-<p>默认搜索会返回用户个人基本能信息和国际。但是，你可以使用type参数过滤个人账户和组织
-  tom in:email type:org
-  查找email中含有tom的组织
-  mike in:name created:&lt;2011-01-01 type:user
-  查找在2011年以前创建的叫mike的个人账户</p>
+<p>默认搜索会返回用户个人基本信息和国籍。但是，你也可以使用type限定符过滤个人账户和组织</p>
+
+<pre><code>tom in:email type:org
+
+--查找email中含有tom的组织
+
+mike in:name created:&lt;2011-01-01 type:user
+
+--查找在2011年以前创建的叫mike的个人账户
+</code></pre>
+
+<hr>
+
+<h3>
+<a id="区域搜索" class="anchor" href="#%E5%8C%BA%E5%9F%9F%E6%90%9C%E7%B4%A2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>区域搜索</h3>
+
+<p>通过限定符设置可以限制搜索区域。在没有限定符的情况下，只能搜索用户名和email地址。
+    tom in:email</p>
+
+<pre><code>--查找email中包含tom的用户
+
+kenya in:login
+
+--查找用户名中包含kenya的用户
+
+bolton in:fullname
+
+--查找real name中包含bolton的用户
+</code></pre>
 
 <hr>
 
