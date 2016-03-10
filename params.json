@@ -1,0 +1,1 @@
+{"name":"Search-in-GitHub","tagline":"","body":"## 搜索github仓库查找资料\r\n\r\n### 搜索用户或组织\r\n  默认搜索会返回用户个人基本能信息和国际。但是，你可以使用type参数过滤个人账户和组织\r\n  tom in:email type:org\r\n  查找email中含有tom的组织\r\n  mike in:name created:<2011-01-01 type:user\r\n  查找在2011年以前创建的叫mike的个人账户\r\n\r\n***\r\n\r\n  ","google":"","note":"Don't delete this file! It's used internally to help with page regeneration."}
