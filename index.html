@@ -235,6 +235,40 @@ stars:>=500 fork:true language:php
 
 --查找包括forked的repositories在内，stars数量至少为500的repositories
 </code></pre>
+<h3>
+<a id="基于用户followers数量的搜索" class="anchor" href="#%E5%9F%BA%E4%BA%8E%E7%94%A8%E6%88%B7followers%E6%95%B0%E9%87%8F%E7%9A%84%E6%90%9C%E7%B4%A2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>基于用户或组织的repository搜索</h3>
+
+<pre><code>user:github
+
+--查找github的repositories
+
+user:defunkt forks:>100
+
+--查找forks数量超过100的defunkt的repositories
+</code></pre>
+<h3>
+<a id="基于用户followers数量的搜索" class="anchor" href="#%E5%9F%BA%E4%BA%8E%E7%94%A8%E6%88%B7followers%E6%95%B0%E9%87%8F%E7%9A%84%E6%90%9C%E7%B4%A2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>基于编程语言的repository搜索</h3>
+
+<pre><code>rails language:javascript
+
+--查找含有rails并且编程语言为javascript的repositories
+</code></pre>
+<h3>
+<a id="基于用户followers数量的搜索" class="anchor" href="#%E5%9F%BA%E4%BA%8E%E7%94%A8%E6%88%B7followers%E6%95%B0%E9%87%8F%E7%9A%84%E6%90%9C%E7%B4%A2" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>基于repository创建时间及更新时间的搜索</h3>
+
+<pre><code>webos created:<2011-01-01
+
+--查找含有关键字webos并且创建于2011年以前的repositories
+
+css pushed:<2013-02-01
+
+--查找含有关键字css并且更新于2013-02-01的repositories
+
+case pushed:>=2013-03-06 fork:only
+
+--只查找fork repositories中含有关键字case并且更新时间早于2013-03-06的repositories
+
+</code></pre>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/emobossemo/search-in-github">Search-in-GitHub</a> is maintained by <a href="https://github.com/emobossemo">emobossemo</a>.</span>
